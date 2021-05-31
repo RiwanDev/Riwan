@@ -1,0 +1,74 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecircle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="shoitttt.png">
+    <title>Riwan Dev</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="font">Home</a></li>
+                <li><a href="#myskills" class="font">My skills</a></li>
+                <li><a href="contactme.html" class="font">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="myskills" class="myskills">
+
+
+        <div class="circlemdrrrr">
+      <p class="myskills-test">My skills : </p>
+
+      <div class="wrapper">
+        
+        <div class="card">
+          <div class="circle">
+            <div class="bar"></div>
+            <div class="box"><span></span></div>
+          </div>
+          <div class="text">C#</div>
+        </div>
+        <div class="card js">
+          <div class="circle">
+            <div class="bar"></div>
+            <div class="box"><span></span></div>
+          </div>
+          <div class="text">JS & NodeJS</div>
+        </div>
+        <div class="card react">
+          <div class="circle">
+            <div class="bar"></div>
+            <div class="box"><span></span></div>
+          </div>
+          <div class="text">C++</div>
+        </div>
+      </div>
+        </div>  
+  
+      <script>
+        let options = {
+          startAngle: -1.55,
+          size: 150,
+          value: 100,
+          fill: {gradient: ["#392FF7", "#1C1783"]}
+        }
+        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+        function(event, progress, stepValue){
+          $(this).parent().find("span").text(String(stepValue.toFixed(2).split('.')[0]) + "%");
+        });
+        $(".js .bar").circleProgress({
+          value: 90
+        });
+        $(".react .bar").circleProgress({
+          value: 70
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mail{
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.emaillistmdrjpp{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.githublogomdrrlol{
+    width: 10%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.githublogomdrrlol:hover{
+    width: 20%;
+    height: auto;
+    transition: 0.5s;
+    content: url(gifgit.gif);
+}
